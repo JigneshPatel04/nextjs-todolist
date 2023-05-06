@@ -49,7 +49,7 @@ const TodoList = () => {
     setNewTodo("");
   };
 
-  const handleDelete = (index) => {
+  const handleDelete = (index: number) => {
     setDeleteIndex(index);
     setShowDeleteModal(true);
   };
@@ -60,7 +60,7 @@ const TodoList = () => {
     setShowDeleteModal(false);
   };
 
-  const handleEdit = (index) => {
+  const handleEdit = (index: number) => {
     setEditIndex(index);
     setEditedTodo(todos[index]);
     setNewTodo("");
